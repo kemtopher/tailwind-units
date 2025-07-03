@@ -22,7 +22,7 @@ function App() {
     const key = parseFloat(i.toFixed(1));
 
     const label = (key % 1 === 0) ? key.toFixed(0) : key.toFixed(1);
-    const remValue = (i / 4).toFixed(2);
+    const remValue = parseFloat((i / 4).toFixed(2));
     const pxValue = parseFloat((i * baseSize).toFixed(1));
 
     rows.push(
