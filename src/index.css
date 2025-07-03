@@ -1,13 +1,139 @@
+* {
+  box-sizing: border-box !important;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(15, 23, 42);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  max-width: 75vw;
+  min-width: 425px;
+  margin: 0 auto;
 }
+
+h1 {
+  margin: 0;
+  margin-left: 1rem;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+header {
+  border-bottom: 1px solid rgba(248, 250, 252, 0.06);
+  padding: 0.5rem 1rem;
+  height: 61px;
+}
+
+.header-wrapper {
+  height: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: flext-start;
+  align-items: center;
+}
+
+#ruler-logo {
+  height: 100%;
+  max-height: 28px;
+}
+
+form {
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.form-wrap {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+label {
+  font-size: 2rem;
+  color: rgb(203, 213, 225);
+  font-weight: 700;
+}
+
+input.clean-input {
+  all: unset;
+  background-color: rgb(30 41 59);
+  color: rgb(148, 163, 184);
+  font-weight: bold;
+  font-size: 2rem;
+  height: auto;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  text-align: center;
+}
+
+input.clean-input::placeholder {
+  color: rgb(148, 163, 184);
+}
+
+button {
+  all: unset;
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(30 41 59);
+  color: rgb(148, 163, 184);
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.table-custom {
+  width: 100%;
+  border-collapse: collapse;
+  background: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.table-custom th,
+.table-custom td {
+  border: 1px solid rgba(248, 250, 252, 0.06);
+  padding: 1rem;
+  text-align: left;
+}
+
+.table-custom th {
+  color: rgb(203, 213, 225);
+  font-weight: 600;
+}
+
+.table-custom tbody tr td.class-row {
+  color: rgb(56, 189, 248);
+}
+
+.table-custom tbody tr td.property-row {
+  color: rgb(165, 180, 252);
+}
+
+.table-custom tbody tr td.value-row {
+  color: rgb(129, 140, 248);
+}
+
+
