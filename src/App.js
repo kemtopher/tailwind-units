@@ -26,7 +26,7 @@ function App() {
     const pxValue = parseFloat((i * baseSize).toFixed(1));
 
     rows.push(
-      <tr key={label} className="text-sm">
+      <tr key={label}>
         <td className="class-row">property-{label}</td>
         <td className="property-row">property: {remValue}rem</td>
         <td className="value-row">{pxValue}px</td>
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div>
-      <header className="flex justify-between">
+      <header>
         <div className="header-wrapper">
           <TailwindLogo />
         <h1>tailwindcss sizing chart</h1>
@@ -54,13 +54,12 @@ function App() {
               className="clean-input"
               ref={inputRef}
               defaultValue={baseSize}
-              placeholder="Default 16px"
+              placeholder="Enter base font-size"
               type="text"
               step="0.1"
             />
             <button
             type="submit"
-            className="bg-[rgb(30,41,59)] text-[rgb(229,231,235)] rounded-md px-4 py-2 hover:opacity-80"
           >
             Set Size
           </button>
@@ -69,10 +68,10 @@ function App() {
 
         <table className="table-custom">
           <thead>
-            <tr className="text-left">
-              <th className="text-white py-2 px-2">Class</th>
-              <th className="text-white py-2 px-2">Property</th>
-              <th className="text-white py-2 px-2">Value</th>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Value</th>
             </tr>
           </thead>
           <tbody>{rows}</tbody>
