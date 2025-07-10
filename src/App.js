@@ -66,6 +66,43 @@ function App() {
           </div>
         </form>
 
+        <table className="table-custom breakpoints">
+          <thead>
+            <tr>
+              <th>Breakpoint Name</th>
+              <th>PX Width</th>
+              <th>Screen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr key="sm">
+              <td className="class-row">sm</td>
+              <td className="property-row">640px</td>
+              <td className="value-row">Mobile</td>
+            </tr>
+            <tr key="md">
+              <td className="class-row">md</td>
+              <td className="property-row">768px</td>
+              <td className="value-row">Tablet</td>
+            </tr>
+            <tr key="lg">
+              <td className="class-row">lg</td>
+              <td className="property-row">1024px</td>
+              <td className="value-row">Laptop</td>
+            </tr>
+            <tr key="lg">
+              <td className="class-row">xl</td>
+              <td className="property-row">1280px</td>
+              <td className="value-row">Desktop</td>
+            </tr>
+            <tr key="2xl">
+              <td className="class-row">2xl</td>
+              <td className="property-row">1536px</td>
+              <td className="value-row">Large Desktop</td>
+            </tr>
+          </tbody>
+        </table>
+
         <table className="table-custom">
           <thead>
             <tr>

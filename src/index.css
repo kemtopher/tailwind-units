@@ -136,4 +136,6 @@ button:hover {
   color: rgb(129, 140, 248);
 }
 
-
+.table-custom.breakpoints {
+  margin-bottom: 80px;
+}
