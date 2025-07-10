@@ -1,4 +1,4 @@
-# Tailwind Units
+# Tailwind Sizing Units
 
 A simple little tool to quickly reference tailwind sizing units based off of your base font size.
 
