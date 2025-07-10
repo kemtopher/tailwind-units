@@ -27,8 +27,8 @@ function App() {
 
     rows.push(
       <tr key={label}>
-        <td className="class-row">property-{label}</td>
-        <td className="property-row">property: {remValue}rem</td>
+        <td className="class-row">prop-{label}</td>
+        <td className="property-row">{remValue}rem</td>
         <td className="value-row">{pxValue}px</td>
       </tr>
     );
@@ -39,7 +39,7 @@ function App() {
       <header>
         <div className="header-wrapper">
           <TailwindLogo />
-        <h1>tailwindcss sizing chart</h1>
+        <h1>tailwindcss sizing unit chart</h1>
         </div>
       </header>
 
@@ -69,9 +69,9 @@ function App() {
         <table className="table-custom">
           <thead>
             <tr>
-              <th>Class</th>
-              <th>Property</th>
-              <th>Value</th>
+              <th>Class Name</th>
+              <th>REM Value</th>
+              <th>PX Value</th>
             </tr>
           </thead>
           <tbody>{rows}</tbody>
