@@ -22,8 +22,8 @@ function App() {
     const key = parseFloat(i.toFixed(1));
 
     const label = (key % 1 === 0) ? key.toFixed(0) : key.toFixed(1);
-    const remValue = parseFloat((i / 4).toFixed(2));
-    const pxValue = parseFloat((i * baseSize).toFixed(1));
+    const remValue = parseFloat((i * 0.25).toFixed(2));
+    const pxValue = parseFloat((remValue * baseSize).toFixed(1));
 
     rows.push(
       <tr key={label}>
